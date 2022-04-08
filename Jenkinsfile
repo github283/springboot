@@ -9,7 +9,7 @@ pipeline {
         }
         stage('编译') {
             steps {
-                sh label: '', script: 'mvn clean package -Dmaven.test.skip=true'
+                sh label: '', script: 'mvn clean package'
             }
         }
 		stage('部署') {
